@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Letterguess</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <div class="jumbotron">
+
+    <h1 class="text-center">Try to Guess the letter you crayon eating son of a gun!</h1>
+
+    <div class="text-center">
+
+      <!-- Here we have our button for generating random numbers (#randomButton) -->
+      <label for="usr" class= "text-center">Click the box! Type the letter!</label>
+            <input type="text" class="form-control" id="usr">
+      
+    </div>
+
+  </div>
+
+  <!-- Here we have div called "randomNumber" where our random number will go -->
+  <h1 class="text-center" id="letterguess"></h1>
+
+  <script type="text/javascript">
+
+    
+
+    $(document).ready(function() {
+
+    var letter = ['a','b','c', 'd' , 'e' , 'f' , 'g' , 'h' , 'i' , 'j' , 'k' , 'l' , 'm' , 'n' , 'o' , 'p' , 'q', 'r', 's','t','u','v','w','x','y','z'];
+    var guess = document.getElementByTagName();
+    var letterChoose = letter[Math.floor(Math.random() * letter.length)];
+      console.log(letterChoose);
+    var wins = 0
+    var failed_attempts = 0
+    var guesses_left  = 0
+    
+    }
+
+
+    
+
+  </script>
+  
+</body>
+</html>
